@@ -7,6 +7,6 @@
 <body>
   
     <p>Cliquer sur Début </p>
-    <a href="users?action=list"><button style="padding: 10px 20px; font-size: 16px;">Debut</button></a>
+    <a href="users"><button style="padding: 10px 20px; font-size: 16px;">Debut</button></a>
 </body>
 </html>

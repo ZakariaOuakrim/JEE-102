@@ -7,8 +7,7 @@
 <body>
     <h1>Add a New User</h1>
     
-    <form action="users" method="post">
-        <input type="hidden" name="action" value="insert" />
+    <form action="${pageContext.request.contextPath}/users/insert" method="post">
         <table cellpadding="5">
             <tr>
                 <td>Username:</td>
@@ -24,6 +23,6 @@
         </table>
     </form>
     <br>
-    <a href="users?action=list">Cancel and Go Back</a>
+    <a href="${pageContext.request.contextPath}/users">Cancel and Go Back</a>
 </body>
 </html>

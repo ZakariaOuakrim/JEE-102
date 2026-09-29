@@ -8,12 +8,11 @@
     <h1>Confirm Deletion</h1>
     <p>Are you sure you want to delete user: <strong>${user.username}</strong>?</p>
     
-    <form action="users" method="post" style="display:inline;">
-        <input type="hidden" name="action" value="delete" />
+    <form action="${pageContext.request.contextPath}/users/delete" method="post" style="display:inline;">
         <input type="hidden" name="id" value="${user.id}" />
         <button type="submit" style="color: red;">Yes, Delete!</button>
     </form>
     
-    <a href="users?action=list"><button>Cancel</button></a>
+    <a href="${pageContext.request.contextPath}/users"><button>Cancel</button></a>
 </body>
 </html>

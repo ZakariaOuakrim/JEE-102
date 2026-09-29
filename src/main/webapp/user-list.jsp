@@ -8,7 +8,7 @@
 <body>
     <h1>Registered Users</h1>
     
-    <a href="users?action=new"><button>Add New User</button></a>
+    <a href="${pageContext.request.contextPath}/users/new"><button>Add New User</button></a>
     <br><br>
     
     <table border="1" cellpadding="10" cellspacing="0">
@@ -24,12 +24,12 @@
                 <td>${user.username}</td>
                 <td>${user.password}</td>
                 <td>
-                    <a href="users?action=confirmDelete&id=${user.id}"><button>Delete</button></a>
+                    <a href="${pageContext.request.contextPath}/users/confirmDelete?id=${user.id}"><button>Delete</button></a>
                 </td>
             </tr>
         </c:forEach>
     </table>
     <br>
-    <a href="debut.jsp">Back to Start</a>
+    <a href="${pageContext.request.contextPath}/debut">Back to Start</a>
 </body>
 </html>

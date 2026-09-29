@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public User getUser(int id) {
+    public User findUser(int id) {
         User user = null;
         String sql = "SELECT * FROM users WHERE id = ?";
         try (Connection conn = DbConnection.getConnection();
@@ -40,7 +40,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public List<User> getAllUsers() {
+    public List<User> findAllUsers() {
         List<User> users = new ArrayList<>();
         String sql = "SELECT * FROM users";
         try (Connection conn = DbConnection.getConnection();

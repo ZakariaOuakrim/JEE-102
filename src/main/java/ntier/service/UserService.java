@@ -13,11 +13,11 @@ public class UserService {
     }
 
     public User getUser(int id) {
-        return userDao.getUser(id);
+        return userDao.findUser(id);
     }
 
     public List<User> getAllUsers() {
-        return userDao.getAllUsers();
+        return userDao.findAllUsers();
     }
 
     public void deleteUser(int id) {
